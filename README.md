@@ -34,16 +34,16 @@ It reads metadata such as **Title**, **Artist**, **Album**, **Year**, **Genre**,
 Converts a 4-byte sync-safe integer (big-endian ↔ little-endian).  
 Used for reading and writing ID3v3 tag frame sizes correctly.
 
-### **2. validate(FILE *fp)**
+### *2. validate(FILE *fp)**
 Validates that the file is an MP3 by checking for the `"ID3"` header.
 
-### **3. view_mp3(FILE *fp)**
+### 3. view_mp3(FILE *fp)**
 Reads all MP3 ID3v3 tags and displays tag names and their corresponding values.
 
-### **4. edit_mp3(FILE *fp, char *tag, char *edits, char *song)**
+### 4. edit_mp3(FILE *fp, char *tag, char *edits, char *song)**
 Selects which tag to edit based on user input and calls the `edit()` function.
 
-### **5. edit(FILE *fp, FILE *fp1, char *arr, char *edits, char *song)**
+### 5. edit(FILE *fp, FILE *fp1, char *arr, char *edits, char *song)**
 Performs the actual editing of the tag content by:
 - Rewriting the new tag value to a temporary MP3 file.
 - Copying unchanged tags as-is.
