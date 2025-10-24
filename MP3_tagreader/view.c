@@ -83,7 +83,7 @@ void view_mp3(FILE * fp)
                 	else if (strcmp(tag, "COMM") == 0)
                         	printf("Comment\t\t:\t%s\n", content);
 			else if (strcmp(tag, "TDRC") == 0)
-                                printf("Year\t\t:\t%s\n", content);
+                                printf("Time\t\t:\t%s\n", content);
 			else if (strcmp(tag, "TCOP") == 0)
                                 printf("Copyright\t:\t%s\n", content);
 			else if (strcmp(tag, "TPUB") == 0)
@@ -116,7 +116,7 @@ void help(void)
         printf("-y\t: Edit year tag.\n");
         printf("-C\t: Edit content tag.\n");
 	printf("-c\t: Edit comment tag.\n");
-	printf("-Y\t: Edit year if not 'y' tag.\n");
+	printf("-Y\t: Edit time tag.\n");
 	printf("-w\t: Edit copyright tag.\n");
 	printf("-p\t: Edit publisher tag.\n");
 	printf("-m\t: Edit comment if not 'c'.\n");
