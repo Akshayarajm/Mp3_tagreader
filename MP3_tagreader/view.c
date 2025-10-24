@@ -89,11 +89,11 @@ void view_mp3(FILE * fp)
 			else if (strcmp(tag, "TPUB") == 0)
                                 printf("Publisher\t:\t%s\n", content);
 			else if (strcmp(tag, "TCOM") == 0)
-                                printf("Comment\t\t:\t%s\n", content);
+                                printf("Composer\t\t:\t%s\n", content);
 			else if (strcmp(tag, "TSSE") == 0)
                                 printf("Software\t:\t%s\n", content);
 			else if (strcmp(tag, "TPE2") == 0)
-                                printf("Album artist\t:\t%s\n", content);
+                                printf("Lead artist\t:\t%s\n", content);
 			else if (strcmp(tag, "APIC") == 0)
                                 printf("Attached image\t:\t%s\n", content);
 
