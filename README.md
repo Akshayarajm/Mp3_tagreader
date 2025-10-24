@@ -37,7 +37,7 @@ Used for reading and writing ID3v3 tag frame sizes correctly.
 ### *2. validate(FILE *fp)**
 Validates that the file is an MP3 by checking for the `"ID3"` header.
 
-### 3. view_mp3(FILE *fp)**
+### 3. view_mp3(FILE *fp)*
 Reads all MP3 ID3v3 tags and displays tag names and their corresponding values.
 
 ### 4. edit_mp3(FILE *fp, char *tag, char *edits, char *song)**
