@@ -17,7 +17,7 @@ It reads metadata such as **Title**, **Artist**, **Album**, **Year**, **Genre**,
 
 ## 🧩 Project Structure
 ```
-📁 MP3_Tag_Reader_Editor
+📁 MP3_tagreader
 ├── edit.c          # Contains tag editing functions
 ├── view.c          # Contains tag viewing and validation functions
 ├── mp3_main.c      # Main file handling command-line arguments
