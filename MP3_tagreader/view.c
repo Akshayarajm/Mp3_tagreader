@@ -119,9 +119,9 @@ void help(void)
 	printf("-Y\t: Edit time tag.\n");
 	printf("-w\t: Edit copyright tag.\n");
 	printf("-p\t: Edit publisher tag.\n");
-	printf("-m\t: Edit comment if not 'c'.\n");
+	printf("-m\t: Edit composer if not 'c'.\n");
 	printf("-s\t: Edit software tag.\n");
-	printf("-l\t: Edit album artist tag.\n");
+	printf("-l\t: Edit lead artist tag.\n");
 	printf("-i\t: Edit attached tag.\n");
 }
 
