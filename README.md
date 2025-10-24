@@ -1,13 +1,13 @@
 # 🎵 MP3 Tag Reader and Editor
 
 ## 📘 Overview
-The **MP3 Tag Reader and Editor** is a C-based command-line utility that allows users to **view and edit ID3v2 tags** in MP3 audio files.  
+The **MP3 Tag Reader and Editor** is a C-based command-line utility that allows users to **view and edit ID3v3 tags** in MP3 audio files.  
 It reads metadata such as **Title**, **Artist**, **Album**, **Year**, **Genre**, and more, and provides functionality to modify these tags directly within the MP3 file.
 
 ---
 
 ## ⚙️ Features
-- ✅ Read and display all standard MP3 ID3v2 tags.  
+- ✅ Read and display all standard MP3 ID3v3 tags.  
 - ✏️ Edit specific tags such as Title, Artist, Album, Year, etc.  
 - 🧩 Validates MP3 files before performing operations.  
 - 🧱 Uses a temporary file to ensure data safety during editing.  
@@ -32,13 +32,13 @@ It reads metadata such as **Title**, **Artist**, **Album**, **Year**, **Genre**,
 
 ### **1. convert(int size)**
 Converts a 4-byte sync-safe integer (big-endian ↔ little-endian).  
-Used for reading and writing ID3v2 tag frame sizes correctly.
+Used for reading and writing ID3v3 tag frame sizes correctly.
 
 ### **2. validate(FILE *fp)**
 Validates that the file is an MP3 by checking for the `"ID3"` header.
 
 ### **3. view_mp3(FILE *fp)**
-Reads all MP3 ID3v2 tags and displays tag names and their corresponding values.
+Reads all MP3 ID3v3 tags and displays tag names and their corresponding values.
 
 ### **4. edit_mp3(FILE *fp, char *tag, char *edits, char *song)**
 Selects which tag to edit based on user input and calls the `edit()` function.
@@ -107,16 +107,17 @@ gcc mp3_main.c edit.c view.c -o mp3_editor
 ```bash
 $ ./mp3_editor -v sample.mp3
 
-____________________________________________________________
+_____________________________________________________________
 IDV3 Tag Reader and Viewer
 ____________________________________________________________
-Title           :   Shape of You
-Artist          :   Ed Sheeran
-Album           :   ÷ (Divide)
-Year            :   2017
-Genre           :   Pop
-Comment         :   Hit single
-____________________________________________________________
+Title           :       pani_pani
+Artist          :       Yo_Yo_honey_singh
+Album           :       Yaariyan
+Year            :       2017
+Genre           :       Bollywood Music - [SongsPk.CC]
+Comment         :       eng
+Attached image  :       image/jpeg
+______________________________________________________________
 ```
 
 ### **Edit Mode**
@@ -135,18 +136,12 @@ Edited successfully
 
 ---
 
-## 🧑‍💻 Author
+## 🧑‍💻 Author: Akshaya Raj Mullasseril
 **Developed in C**  
 This project demonstrates:
 - Binary file handling  
 - Metadata parsing  
 - Endianness manipulation  
-- Command-line argument processing  
-
----
-
-## 📜 License
-This project is open-source under the **MIT License**.  
-You are free to use, modify, and distribute this code.
+- Command-line argument processing
 
 ---
